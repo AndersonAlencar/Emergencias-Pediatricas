@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E20AE9ED2516A95B00CF3D73 /* EmergencyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AE9EC2516A95B00CF3D73 /* EmergencyCollectionViewCell.swift */; };
+		E20AE9F22516ABDB00CF3D73 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AE9F12516ABDB00CF3D73 /* ViewCode.swift */; };
+		E20AE9FA25178E0000CF3D73 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AE9F925178E0000CF3D73 /* LearnViewController.swift */; };
+		E20AE9FF25178FFA00CF3D73 /* LearnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AE9FE25178FFA00CF3D73 /* LearnTableViewCell.swift */; };
+		E20AEA042517D55100CF3D73 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AEA032517D55100CF3D73 /* ConfigurationViewController.swift */; };
+		E20AEA092517DBA300CF3D73 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AEA082517DBA300CF3D73 /* Colors.swift */; };
+		E20AEA142517E6BE00CF3D73 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AEA132517E6BE00CF3D73 /* TabViewController.swift */; };
+		E2829E4625169CDD003500ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2829E4525169CDD003500ED /* AppDelegate.swift */; };
+		E2829E4825169CDD003500ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2829E4725169CDD003500ED /* SceneDelegate.swift */; };
+		E2829E4A25169CDD003500ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2829E4925169CDD003500ED /* ViewController.swift */; };
+		E2829E4D25169CDD003500ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2829E4B25169CDD003500ED /* Main.storyboard */; };
+		E2829E4F25169CE0003500ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2829E4E25169CE0003500ED /* Assets.xcassets */; };
+		E2829E5225169CE0003500ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2829E5025169CE0003500ED /* LaunchScreen.storyboard */; };
+		E2829E5D25169CE0003500ED /* Emergencias_PediatricasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2829E5C25169CE0003500ED /* Emergencias_PediatricasTests.swift */; };
+		E2829E6825169CE0003500ED /* Emergencias_PediatricasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2829E6725169CE0003500ED /* Emergencias_PediatricasUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2829E5925169CE0003500ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2829E3A25169CDD003500ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2829E4125169CDD003500ED;
+			remoteInfo = "Emergencias Pediatricas";
+		};
+		E2829E6425169CE0003500ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2829E3A25169CDD003500ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2829E4125169CDD003500ED;
+			remoteInfo = "Emergencias Pediatricas";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E20AE9EC2516A95B00CF3D73 /* EmergencyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyCollectionViewCell.swift; sourceTree = "<group>"; };
+		E20AE9F12516ABDB00CF3D73 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		E20AE9F925178E0000CF3D73 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		E20AE9FE25178FFA00CF3D73 /* LearnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnTableViewCell.swift; sourceTree = "<group>"; };
+		E20AEA032517D55100CF3D73 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		E20AEA082517DBA300CF3D73 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E20AEA132517E6BE00CF3D73 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		E2829E4225169CDD003500ED /* Emergencias Pediatricas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emergencias Pediatricas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2829E4525169CDD003500ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2829E4725169CDD003500ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E2829E4925169CDD003500ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2829E4C25169CDD003500ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2829E4E25169CE0003500ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2829E5125169CE0003500ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2829E5325169CE0003500ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2829E5825169CE0003500ED /* Emergencias PediatricasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Emergencias PediatricasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2829E5C25169CE0003500ED /* Emergencias_PediatricasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emergencias_PediatricasTests.swift; sourceTree = "<group>"; };
+		E2829E5E25169CE0003500ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2829E6325169CE0003500ED /* Emergencias PediatricasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Emergencias PediatricasUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2829E6725169CE0003500ED /* Emergencias_PediatricasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emergencias_PediatricasUITests.swift; sourceTree = "<group>"; };
+		E2829E6925169CE0003500ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2829E3F25169CDD003500ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2829E5525169CE0003500ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2829E6025169CE0003500ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E20AEA182517F3A900CF3D73 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E20AEA082517DBA300CF3D73 /* Colors.swift */,
+				E20AE9F12516ABDB00CF3D73 /* ViewCode.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E2829E3925169CDD003500ED = {
+			isa = PBXGroup;
+			children = (
+				E2829E4425169CDD003500ED /* Emergencias Pediatricas */,
+				E2829E5B25169CE0003500ED /* Emergencias PediatricasTests */,
+				E2829E6625169CE0003500ED /* Emergencias PediatricasUITests */,
+				E2829E4325169CDD003500ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2829E4325169CDD003500ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2829E4225169CDD003500ED /* Emergencias Pediatricas.app */,
+				E2829E5825169CE0003500ED /* Emergencias PediatricasTests.xctest */,
+				E2829E6325169CE0003500ED /* Emergencias PediatricasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2829E4425169CDD003500ED /* Emergencias Pediatricas */ = {
+			isa = PBXGroup;
+			children = (
+				E20AEA182517F3A900CF3D73 /* Utils */,
+				E2829E782516A049003500ED /* Controllers */,
+				E2829E4525169CDD003500ED /* AppDelegate.swift */,
+				E2829E4725169CDD003500ED /* SceneDelegate.swift */,
+				E2829E4B25169CDD003500ED /* Main.storyboard */,
+				E2829E4E25169CE0003500ED /* Assets.xcassets */,
+				E2829E5025169CE0003500ED /* LaunchScreen.storyboard */,
+				E2829E5325169CE0003500ED /* Info.plist */,
+			);
+			path = "Emergencias Pediatricas";
+			sourceTree = "<group>";
+		};
+		E2829E5B25169CE0003500ED /* Emergencias PediatricasTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2829E5C25169CE0003500ED /* Emergencias_PediatricasTests.swift */,
+				E2829E5E25169CE0003500ED /* Info.plist */,
+			);
+			path = "Emergencias PediatricasTests";
+			sourceTree = "<group>";
+		};
+		E2829E6625169CE0003500ED /* Emergencias PediatricasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2829E6725169CE0003500ED /* Emergencias_PediatricasUITests.swift */,
+				E2829E6925169CE0003500ED /* Info.plist */,
+			);
+			path = "Emergencias PediatricasUITests";
+			sourceTree = "<group>";
+		};
+		E2829E782516A049003500ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2829E4925169CDD003500ED /* ViewController.swift */,
+				E20AE9EC2516A95B00CF3D73 /* EmergencyCollectionViewCell.swift */,
+				E20AE9F925178E0000CF3D73 /* LearnViewController.swift */,
+				E20AE9FE25178FFA00CF3D73 /* LearnTableViewCell.swift */,
+				E20AEA032517D55100CF3D73 /* ConfigurationViewController.swift */,
+				E20AEA132517E6BE00CF3D73 /* TabViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2829E4125169CDD003500ED /* Emergencias Pediatricas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2829E6C25169CE0003500ED /* Build configuration list for PBXNativeTarget "Emergencias Pediatricas" */;
+			buildPhases = (
+				E2829E3E25169CDD003500ED /* Sources */,
+				E2829E3F25169CDD003500ED /* Frameworks */,
+				E2829E4025169CDD003500ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Emergencias Pediatricas";
+			productName = "Emergencias Pediatricas";
+			productReference = E2829E4225169CDD003500ED /* Emergencias Pediatricas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2829E5725169CE0003500ED /* Emergencias PediatricasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2829E6F25169CE0003500ED /* Build configuration list for PBXNativeTarget "Emergencias PediatricasTests" */;
+			buildPhases = (
+				E2829E5425169CE0003500ED /* Sources */,
+				E2829E5525169CE0003500ED /* Frameworks */,
+				E2829E5625169CE0003500ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2829E5A25169CE0003500ED /* PBXTargetDependency */,
+			);
+			name = "Emergencias PediatricasTests";
+			productName = "Emergencias PediatricasTests";
+			productReference = E2829E5825169CE0003500ED /* Emergencias PediatricasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2829E6225169CE0003500ED /* Emergencias PediatricasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2829E7225169CE0003500ED /* Build configuration list for PBXNativeTarget "Emergencias PediatricasUITests" */;
+			buildPhases = (
+				E2829E5F25169CE0003500ED /* Sources */,
+				E2829E6025169CE0003500ED /* Frameworks */,
+				E2829E6125169CE0003500ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2829E6525169CE0003500ED /* PBXTargetDependency */,
+			);
+			name = "Emergencias PediatricasUITests";
+			productName = "Emergencias PediatricasUITests";
+			productReference = E2829E6325169CE0003500ED /* Emergencias PediatricasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2829E3A25169CDD003500ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					E2829E4125169CDD003500ED = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					E2829E5725169CE0003500ED = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = E2829E4125169CDD003500ED;
+					};
+					E2829E6225169CE0003500ED = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = E2829E4125169CDD003500ED;
+					};
+				};
+			};
+			buildConfigurationList = E2829E3D25169CDD003500ED /* Build configuration list for PBXProject "Emergencias Pediatricas" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2829E3925169CDD003500ED;
+			productRefGroup = E2829E4325169CDD003500ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2829E4125169CDD003500ED /* Emergencias Pediatricas */,
+				E2829E5725169CE0003500ED /* Emergencias PediatricasTests */,
+				E2829E6225169CE0003500ED /* Emergencias PediatricasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2829E4025169CDD003500ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2829E5225169CE0003500ED /* LaunchScreen.storyboard in Resources */,
+				E2829E4F25169CE0003500ED /* Assets.xcassets in Resources */,
+				E2829E4D25169CDD003500ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2829E5625169CE0003500ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2829E6125169CE0003500ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2829E3E25169CDD003500ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2829E4A25169CDD003500ED /* ViewController.swift in Sources */,
+				E20AEA092517DBA300CF3D73 /* Colors.swift in Sources */,
+				E20AEA042517D55100CF3D73 /* ConfigurationViewController.swift in Sources */,
+				E20AE9F22516ABDB00CF3D73 /* ViewCode.swift in Sources */,
+				E20AE9FF25178FFA00CF3D73 /* LearnTableViewCell.swift in Sources */,
+				E2829E4625169CDD003500ED /* AppDelegate.swift in Sources */,
+				E20AE9ED2516A95B00CF3D73 /* EmergencyCollectionViewCell.swift in Sources */,
+				E2829E4825169CDD003500ED /* SceneDelegate.swift in Sources */,
+				E20AEA142517E6BE00CF3D73 /* TabViewController.swift in Sources */,
+				E20AE9FA25178E0000CF3D73 /* LearnViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2829E5425169CE0003500ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2829E5D25169CE0003500ED /* Emergencias_PediatricasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2829E5F25169CE0003500ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2829E6825169CE0003500ED /* Emergencias_PediatricasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2829E5A25169CE0003500ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2829E4125169CDD003500ED /* Emergencias Pediatricas */;
+			targetProxy = E2829E5925169CE0003500ED /* PBXContainerItemProxy */;
+		};
+		E2829E6525169CE0003500ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2829E4125169CDD003500ED /* Emergencias Pediatricas */;
+			targetProxy = E2829E6425169CE0003500ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2829E4B25169CDD003500ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2829E4C25169CDD003500ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2829E5025169CE0003500ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2829E5125169CE0003500ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2829E6A25169CE0003500ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2829E6B25169CE0003500ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2829E6D25169CE0003500ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				INFOPLIST_FILE = "Emergencias Pediatricas/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andersonalencar.Emergencias-Pediatricas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2829E6E25169CE0003500ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				INFOPLIST_FILE = "Emergencias Pediatricas/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andersonalencar.Emergencias-Pediatricas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E2829E7025169CE0003500ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				INFOPLIST_FILE = "Emergencias PediatricasTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andersonalencar.Emergencias-PediatricasTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emergencias Pediatricas.app/Emergencias Pediatricas";
+			};
+			name = Debug;
+		};
+		E2829E7125169CE0003500ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				INFOPLIST_FILE = "Emergencias PediatricasTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andersonalencar.Emergencias-PediatricasTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emergencias Pediatricas.app/Emergencias Pediatricas";
+			};
+			name = Release;
+		};
+		E2829E7325169CE0003500ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				INFOPLIST_FILE = "Emergencias PediatricasUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andersonalencar.Emergencias-PediatricasUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Emergencias Pediatricas";
+			};
+			name = Debug;
+		};
+		E2829E7425169CE0003500ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XAHB7RJJD;
+				INFOPLIST_FILE = "Emergencias PediatricasUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andersonalencar.Emergencias-PediatricasUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Emergencias Pediatricas";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2829E3D25169CDD003500ED /* Build configuration list for PBXProject "Emergencias Pediatricas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2829E6A25169CE0003500ED /* Debug */,
+				E2829E6B25169CE0003500ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2829E6C25169CE0003500ED /* Build configuration list for PBXNativeTarget "Emergencias Pediatricas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2829E6D25169CE0003500ED /* Debug */,
+				E2829E6E25169CE0003500ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2829E6F25169CE0003500ED /* Build configuration list for PBXNativeTarget "Emergencias PediatricasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2829E7025169CE0003500ED /* Debug */,
+				E2829E7125169CE0003500ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2829E7225169CE0003500ED /* Build configuration list for PBXNativeTarget "Emergencias PediatricasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2829E7325169CE0003500ED /* Debug */,
+				E2829E7425169CE0003500ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2829E3A25169CDD003500ED /* Project object */;
+}
