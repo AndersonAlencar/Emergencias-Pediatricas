@@ -22,6 +22,9 @@
 		E2829E5225169CE0003500ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2829E5025169CE0003500ED /* LaunchScreen.storyboard */; };
 		E2829E5D25169CE0003500ED /* Emergencias_PediatricasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2829E5C25169CE0003500ED /* Emergencias_PediatricasTests.swift */; };
 		E2829E6825169CE0003500ED /* Emergencias_PediatricasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2829E6725169CE0003500ED /* Emergencias_PediatricasUITests.swift */; };
+		E299C5F02517F717007C2331 /* SubCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E299C5EF2517F717007C2331 /* SubCategoryViewController.swift */; };
+		E299C60725181445007C2331 /* EmergencyStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E299C60625181445007C2331 /* EmergencyStepsViewController.swift */; };
+		E299C60D2518148D007C2331 /* EmergencyStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E299C60C2518148D007C2331 /* EmergencyStepsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		E2829E6325169CE0003500ED /* Emergencias PediatricasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Emergencias PediatricasUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2829E6725169CE0003500ED /* Emergencias_PediatricasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emergencias_PediatricasUITests.swift; sourceTree = "<group>"; };
 		E2829E6925169CE0003500ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E299C5EF2517F717007C2331 /* SubCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryViewController.swift; sourceTree = "<group>"; };
+		E299C60625181445007C2331 /* EmergencyStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyStepsViewController.swift; sourceTree = "<group>"; };
+		E299C60C2518148D007C2331 /* EmergencyStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyStepsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,7 @@
 		E2829E4425169CDD003500ED /* Emergencias Pediatricas */ = {
 			isa = PBXGroup;
 			children = (
+				E299C60B25181471007C2331 /* Views */,
 				E20AEA182517F3A900CF3D73 /* Utils */,
 				E2829E782516A049003500ED /* Controllers */,
 				E2829E4525169CDD003500ED /* AppDelegate.swift */,
@@ -155,14 +162,48 @@
 		E2829E782516A049003500ED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E2829E4925169CDD003500ED /* ViewController.swift */,
-				E20AE9EC2516A95B00CF3D73 /* EmergencyCollectionViewCell.swift */,
-				E20AE9F925178E0000CF3D73 /* LearnViewController.swift */,
-				E20AE9FE25178FFA00CF3D73 /* LearnTableViewCell.swift */,
-				E20AEA032517D55100CF3D73 /* ConfigurationViewController.swift */,
 				E20AEA132517E6BE00CF3D73 /* TabViewController.swift */,
+				E299C5F42517F764007C2331 /* Emergency */,
+				E299C5F82517F772007C2331 /* Learn */,
+				E299C5FC2517F77F007C2331 /* Config */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E299C5F42517F764007C2331 /* Emergency */ = {
+			isa = PBXGroup;
+			children = (
+				E2829E4925169CDD003500ED /* ViewController.swift */,
+				E20AE9EC2516A95B00CF3D73 /* EmergencyCollectionViewCell.swift */,
+				E299C5EF2517F717007C2331 /* SubCategoryViewController.swift */,
+				E299C60625181445007C2331 /* EmergencyStepsViewController.swift */,
+			);
+			path = Emergency;
+			sourceTree = "<group>";
+		};
+		E299C5F82517F772007C2331 /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				E20AE9F925178E0000CF3D73 /* LearnViewController.swift */,
+				E20AE9FE25178FFA00CF3D73 /* LearnTableViewCell.swift */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
+		E299C5FC2517F77F007C2331 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E20AEA032517D55100CF3D73 /* ConfigurationViewController.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		E299C60B25181471007C2331 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E299C60C2518148D007C2331 /* EmergencyStepsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,10 +341,13 @@
 				E20AEA042517D55100CF3D73 /* ConfigurationViewController.swift in Sources */,
 				E20AE9F22516ABDB00CF3D73 /* ViewCode.swift in Sources */,
 				E20AE9FF25178FFA00CF3D73 /* LearnTableViewCell.swift in Sources */,
+				E299C5F02517F717007C2331 /* SubCategoryViewController.swift in Sources */,
+				E299C60725181445007C2331 /* EmergencyStepsViewController.swift in Sources */,
 				E2829E4625169CDD003500ED /* AppDelegate.swift in Sources */,
 				E20AE9ED2516A95B00CF3D73 /* EmergencyCollectionViewCell.swift in Sources */,
 				E2829E4825169CDD003500ED /* SceneDelegate.swift in Sources */,
 				E20AEA142517E6BE00CF3D73 /* TabViewController.swift in Sources */,
+				E299C60D2518148D007C2331 /* EmergencyStepsView.swift in Sources */,
 				E20AE9FA25178E0000CF3D73 /* LearnViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

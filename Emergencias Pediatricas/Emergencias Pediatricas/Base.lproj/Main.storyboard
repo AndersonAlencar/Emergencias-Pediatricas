@@ -204,6 +204,63 @@
             </objects>
             <point key="canvasLocation" x="-684.05797101449275" y="1314.5089285714284"/>
         </scene>
+        <!--Sub Category View Controller-->
+        <scene sceneID="my5-8I-6En">
+            <objects>
+                <viewController storyboardIdentifier="SubCategory" id="XCx-eP-Q3P" customClass="SubCategoryViewController" customModule="Emergencias_Pediatricas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lU8-MT-w1K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XS3-RY-Y5b">
+                                <rect key="frame" x="33.5" y="215.5" width="165" height="165"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="U1f-S6-s2D"/>
+                                    <constraint firstAttribute="height" constant="165" id="muV-bX-gME"/>
+                                    <constraint firstAttribute="width" secondItem="XS3-RY-Y5b" secondAttribute="height" multiplier="1:1" id="pgy-cE-ElQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1EL-vh-tm1">
+                                <rect key="frame" x="124.5" y="395.5" width="165" height="165"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="1CL-iZ-del"/>
+                                    <constraint firstAttribute="width" secondItem="1EL-vh-tm1" secondAttribute="height" multiplier="1:1" id="TNB-gp-4Fj"/>
+                                    <constraint firstAttribute="height" constant="165" id="WvQ-8S-MDI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bmf-yS-plG">
+                                <rect key="frame" x="216.5" y="215.5" width="165" height="165"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="F0d-E2-aKB"/>
+                                    <constraint firstAttribute="height" constant="165" id="MQb-5S-6p9"/>
+                                    <constraint firstAttribute="width" secondItem="Bmf-yS-plG" secondAttribute="height" multiplier="1:1" id="ckc-I7-Hiw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YFK-fi-Mgq"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="XS3-RY-Y5b" firstAttribute="centerX" secondItem="lU8-MT-w1K" secondAttribute="centerX" constant="-91" id="0ce-Ns-vTj"/>
+                            <constraint firstItem="Bmf-yS-plG" firstAttribute="centerY" secondItem="lU8-MT-w1K" secondAttribute="centerY" constant="-150" id="2L1-Sc-Jwt"/>
+                            <constraint firstItem="1EL-vh-tm1" firstAttribute="centerY" secondItem="lU8-MT-w1K" secondAttribute="centerY" constant="30" id="QZ8-ZM-CXD"/>
+                            <constraint firstItem="XS3-RY-Y5b" firstAttribute="centerY" secondItem="lU8-MT-w1K" secondAttribute="centerY" constant="-150" id="Sd6-f3-ZhI"/>
+                            <constraint firstItem="1EL-vh-tm1" firstAttribute="centerX" secondItem="lU8-MT-w1K" secondAttribute="centerX" id="Vjp-Fs-TxL"/>
+                            <constraint firstItem="Bmf-yS-plG" firstAttribute="centerX" secondItem="lU8-MT-w1K" secondAttribute="centerX" constant="92" id="khV-ut-Lw2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="section1" destination="XS3-RY-Y5b" id="u7h-hU-ezo"/>
+                        <outlet property="section2" destination="Bmf-yS-plG" id="qSo-aD-QRF"/>
+                        <outlet property="section3" destination="1EL-vh-tm1" id="bG7-1d-ar0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rGm-7e-asa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-684" y="1994"/>
+        </scene>
         <!--Tab View Controller-->
         <scene sceneID="tqr-SZ-KFv">
             <objects>
@@ -214,14 +271,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="labelColor"/>
                         <color key="barTintColor" red="0.20000000000000001" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="">
-                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="">
-                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="sid-iX-nZs" kind="relationship" relationship="viewControllers" id="bii-Ot-80k"/>
@@ -307,6 +356,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
