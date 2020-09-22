@@ -39,6 +39,13 @@ class LearnViewController: UIViewController {
         btInformation.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: spacing);
         btInformation.titleEdgeInsets = UIEdgeInsets(top: 0, left: spacing, bottom: 0, right: 0);
         btInformation.layer.cornerRadius = 8
+        btInformation.addTarget(self, action: #selector(presentInformation), for: .touchUpInside)
+    }
+    
+    @objc func presentInformation() {
+        let cv = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "InformationControllerID") as? InformationViewController
+        let nav = UINavigationController(rootViewController: cv!)
+        present(nav, animated: true, completion: nil)
     }
 }
 

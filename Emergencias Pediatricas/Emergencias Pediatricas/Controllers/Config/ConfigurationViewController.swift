@@ -28,15 +28,24 @@ class ConfigurationViewController: UIViewController {
     
     func configureButtons(){
         policyBt.layer.cornerRadius = 8
+        policyBt.addTarget(self, action: #selector(presentPrivacy), for: .touchUpInside)
         aboutBt.layer.cornerRadius = 8
         aboutBt.addTarget(self, action: #selector(presentAbout), for: .touchUpInside)
     }
     
     
     @objc func presentAbout() {
-        let aboutController = AboutViewController()
-        aboutController.modalPresentationStyle = .fullScreen
-        present(aboutController, animated: true, completion: nil)
+        let cv = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "AboutControllerID") as? AboutViewController
+        //cv?.modalPresentationStyle = .fullScreen
+        let nav = UINavigationController(rootViewController: cv!)
+        //nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true, completion: nil)
+    }
+    
+    @objc func presentPrivacy() {
+        let cv = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "PrivacyControllerID") as? PrivacyViewController
+        let nav = UINavigationController(rootViewController: cv!)
+        present(nav, animated: true, completion: nil)
     }
 
 }

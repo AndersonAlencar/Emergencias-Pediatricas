@@ -29,6 +29,8 @@
 		E2F45DC32519606F00AB8D4F /* EmergencyStepsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F45DC22519606F00AB8D4F /* EmergencyStepsProtocol.swift */; };
 		E2F45DC92519886F00AB8D4F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F45DC82519886F00AB8D4F /* AboutViewController.swift */; };
 		E2F45DD12519888D00AB8D4F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F45DD02519888D00AB8D4F /* AboutView.swift */; };
+		E2F45DF9251AB02B00AB8D4F /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F45DF8251AB02B00AB8D4F /* PrivacyViewController.swift */; };
+		E2F45DFF251ABD0F00AB8D4F /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F45DFE251ABD0F00AB8D4F /* InformationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		E2F45DC22519606F00AB8D4F /* EmergencyStepsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyStepsProtocol.swift; sourceTree = "<group>"; };
 		E2F45DC82519886F00AB8D4F /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		E2F45DD02519888D00AB8D4F /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		E2F45DF8251AB02B00AB8D4F /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		E2F45DFE251ABD0F00AB8D4F /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,7 @@
 				E299C5F82517F772007C2331 /* Learn */,
 				E299C5FC2517F77F007C2331 /* Config */,
 				E2F45DC72519881300AB8D4F /* Privacy and About */,
+				E2F45DFD251ABCF500AB8D4F /* Information */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -230,8 +235,17 @@
 			isa = PBXGroup;
 			children = (
 				E2F45DC82519886F00AB8D4F /* AboutViewController.swift */,
+				E2F45DF8251AB02B00AB8D4F /* PrivacyViewController.swift */,
 			);
 			path = "Privacy and About";
+			sourceTree = "<group>";
+		};
+		E2F45DFD251ABCF500AB8D4F /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				E2F45DFE251ABD0F00AB8D4F /* InformationViewController.swift */,
+			);
+			path = Information;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,10 +379,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2829E4A25169CDD003500ED /* ViewController.swift in Sources */,
+				E2F45DFF251ABD0F00AB8D4F /* InformationViewController.swift in Sources */,
 				E20AEA092517DBA300CF3D73 /* Colors.swift in Sources */,
 				E2F45DD12519888D00AB8D4F /* AboutView.swift in Sources */,
 				E20AEA042517D55100CF3D73 /* ConfigurationViewController.swift in Sources */,
 				E20AE9F22516ABDB00CF3D73 /* ViewCode.swift in Sources */,
+				E2F45DF9251AB02B00AB8D4F /* PrivacyViewController.swift in Sources */,
 				E20AE9FF25178FFA00CF3D73 /* LearnTableViewCell.swift in Sources */,
 				E299C5F02517F717007C2331 /* SubCategoryViewController.swift in Sources */,
 				E299C60725181445007C2331 /* EmergencyStepsViewController.swift in Sources */,

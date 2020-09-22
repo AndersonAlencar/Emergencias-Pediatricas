@@ -15,6 +15,8 @@ class EmergencyCollectionViewCell: UICollectionViewCell {
         emergencyName.textColor = .systemBlue
         emergencyName.text = "Apenas Testando"
         emergencyName.textColor = .white
+        emergencyName.textAlignment = .center
+        emergencyName.numberOfLines = 0
         emergencyName.translatesAutoresizingMaskIntoConstraints = false
         return emergencyName
     }()

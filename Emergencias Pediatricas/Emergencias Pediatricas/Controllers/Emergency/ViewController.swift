@@ -17,13 +17,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameEmergency: UILabel!
     
     var images = [UIImage(named: "paradaCardio"),UIImage(named: "queimadura"),UIImage(named: "queda"),UIImage(named: "afogamento"),UIImage(named: "engasgo"),UIImage(named: "choque")]
+    var namesEmergency = ["Parada Cardiorespiratória","Queimadura","Queda","Afogamento","Engasgo","Choque Elétrico"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         configureInformationButton()
+        informatonBT.addTarget(self, action: #selector(presentInformation), for: .touchUpInside)
         
         //collectionview
         configureCollection()
@@ -54,8 +54,12 @@ class ViewController: UIViewController {
         emergencyCollection.backgroundColor = UIColor(red: 0.96, green: 1.00, blue: 1.00, alpha: 1.00)
         emergencyCollection.showsVerticalScrollIndicator = false
     }
-
-
+    
+    @objc func presentInformation() {
+        let cv = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "InformationControllerID") as? InformationViewController
+        let nav = UINavigationController(rootViewController: cv!)
+        present(nav, animated: true, completion: nil)
+    }
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -65,7 +69,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! EmergencyCollectionViewCell
-        cell.configureCell(name: "Queimadura", imageEmergency: images[indexPath.row]!)
+        cell.configureCell(name: namesEmergency[indexPath.row], imageEmergency: images[indexPath.row]!)
         cell.layer.cornerRadius = 10
         return cell
     }
