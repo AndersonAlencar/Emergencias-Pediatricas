@@ -12,14 +12,11 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var emergencyCollection: UICollectionView!
-    
-    
     @IBOutlet weak var informatonBT: UIButton!
-    
-    
     @IBOutlet weak var imgCollection: UIImageView!
-    
     @IBOutlet weak var nameEmergency: UILabel!
+    
+    var images = [UIImage(named: "paradaCardio"),UIImage(named: "queimadura"),UIImage(named: "queda"),UIImage(named: "afogamento"),UIImage(named: "engasgo"),UIImage(named: "choque")]
     
     
     override func viewDidLoad() {
@@ -63,17 +60,22 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! EmergencyCollectionViewCell
-        cell.configureCell(name: "Queimadura", imageEmergency: UIImage(named: "ame")!)
+        cell.configureCell(name: "Queimadura", imageEmergency: images[indexPath.row]!)
         cell.layer.cornerRadius = 10
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let subcategoryController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "SubCategory") as? SubCategoryViewController
+        subcategoryController?.emergency = Emergency.mockData
+        self.navigationController?.pushViewController(subcategoryController!, animated: true)
+
+    }
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
@@ -93,12 +95,6 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "SubCategory") as? SubCategoryViewController
-        self.navigationController?.pushViewController(vc!, animated: true)
-
     }
 }
 

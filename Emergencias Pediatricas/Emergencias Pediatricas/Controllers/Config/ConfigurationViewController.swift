@@ -12,7 +12,6 @@ class ConfigurationViewController: UIViewController {
     
     
     @IBOutlet weak var policyBt: UIButton!
-    
     @IBOutlet weak var aboutBt: UIButton!
     
     override func viewDidLoad() {
@@ -30,6 +29,14 @@ class ConfigurationViewController: UIViewController {
     func configureButtons(){
         policyBt.layer.cornerRadius = 8
         aboutBt.layer.cornerRadius = 8
+        aboutBt.addTarget(self, action: #selector(presentAbout), for: .touchUpInside)
+    }
+    
+    
+    @objc func presentAbout() {
+        let aboutController = AboutViewController()
+        aboutController.modalPresentationStyle = .fullScreen
+        present(aboutController, animated: true, completion: nil)
     }
 
 }

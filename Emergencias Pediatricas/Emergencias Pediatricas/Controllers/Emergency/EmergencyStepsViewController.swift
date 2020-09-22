@@ -9,10 +9,18 @@ import UIKit
 
 class EmergencyStepsViewController: UIViewController {
 
+    var subcategorySteps: Subcategory?
+    var step: Int = 0
+    
+    lazy var emergencyView: EmergencyStepsView = {
+        let emergencyView = EmergencyStepsView(frame: .zero,title: subcategorySteps!.subCategoryName, description: (subcategorySteps?.steps[step])!, img: subcategorySteps!.imageSteps[step], indicator: "\(step+1) / \(String(describing: subcategorySteps!.steps.count))")
+        emergencyView.stepDelegate = self
+        return emergencyView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view = EmergencyStepsView()
+        view = emergencyView
         navigationController?.navigationBar.topItem?.title = "Parada CardioRepiratório"
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         //navigationItem.title = "Emergências Pediatricas"
@@ -30,4 +38,26 @@ class EmergencyStepsViewController: UIViewController {
     @objc func back() {
         dismiss(animated: true, completion: nil)
     }
+}
+
+
+extension EmergencyStepsViewController: EmergencyStepsProtocol {
+    func nextStep() -> (step: String, img: Data, indicator: String)? {
+        step += 1
+        if step >= (subcategorySteps?.steps.count)! {
+            return nil
+        }
+        let responses = ((subcategorySteps?.steps[step])!,subcategorySteps!.imageSteps[step],"\(step+1) / \(String(describing: subcategorySteps!.steps.count))")
+        return responses
+    }
+    
+    func backStep() -> (step: String, img: Data, indicator: String)? {
+        if step == 0 {
+            return nil
+        }
+        step -= 1
+        let responses = ((subcategorySteps?.steps[step])!,subcategorySteps!.imageSteps[step],"\(step+1) / \(String(describing: subcategorySteps!.steps.count))")
+        return responses
+    }
+    
 }

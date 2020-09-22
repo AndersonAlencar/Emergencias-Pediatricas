@@ -8,8 +8,9 @@
 import UIKit
 
 class EmergencyStepsView: UIView {
-
-  
+    
+    var stepDelegate: EmergencyStepsProtocol?
+    
     lazy var acessoryView: UIView = {
         let acessoryView = UIView()
         acessoryView.backgroundColor = .acessoryColor
@@ -21,7 +22,7 @@ class EmergencyStepsView: UIView {
     lazy var acessoryTittle: UILabel = {
         let acessoryTittle = UILabel()
         acessoryTittle.textAlignment = .center
-        acessoryTittle.text = "Testando"
+        //acessoryTittle.text = "Testando"
         acessoryTittle.textColor = .acessoryTextColor
         acessoryTittle.font = UIFont.systemFont(ofSize: 25, weight: .light)
         acessoryTittle.adjustsFontSizeToFitWidth = true
@@ -35,7 +36,6 @@ class EmergencyStepsView: UIView {
     lazy var imageStep: UIImageView = {
         let imageStep = UIImageView()
         imageStep.clipsToBounds = true
-        imageStep.image = UIImage(named: "chemex")
         imageStep.contentMode = .scaleAspectFill
         imageStep.layer.cornerRadius = 8
         imageStep.translatesAutoresizingMaskIntoConstraints = false
@@ -44,10 +44,10 @@ class EmergencyStepsView: UIView {
     
     lazy var descriptionStep: UILabel = {
         let descriptionStep = UILabel()
-        descriptionStep.text = "teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste"
         descriptionStep.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         descriptionStep.adjustsFontSizeToFitWidth = true
         descriptionStep.textColor = .black
+        descriptionStep.textAlignment = .center
         descriptionStep.numberOfLines = 0
         descriptionStep.sizeToFit()
         descriptionStep.translatesAutoresizingMaskIntoConstraints = false
@@ -59,6 +59,7 @@ class EmergencyStepsView: UIView {
         backButton.layer.cornerRadius = 8
         backButton.backgroundColor = .buttonColor
         backButton.setImage(UIImage(named: "back"), for: .normal)
+        backButton.addTarget(self, action: #selector(backStep), for: .touchUpInside)
         backButton.translatesAutoresizingMaskIntoConstraints = false
         return backButton
     }()
@@ -68,6 +69,7 @@ class EmergencyStepsView: UIView {
         nextButton.backgroundColor = .buttonColor
         nextButton.layer.cornerRadius = 8
         nextButton.setImage(UIImage(named: "next"), for: .normal)
+        nextButton.addTarget(self, action: #selector(nextStep), for: .touchUpInside)
         nextButton.translatesAutoresizingMaskIntoConstraints = false
         return nextButton
     }()
@@ -82,7 +84,6 @@ class EmergencyStepsView: UIView {
     
     lazy var stepIndicator: UILabel = {
         let stepIndicator = UILabel()
-        stepIndicator.text = "1 / 8"
         stepIndicator.textAlignment = .center
         stepIndicator.textColor = .acessoryTextColor
         stepIndicator.font = UIFont.systemFont(ofSize: 22, weight: .semibold)
@@ -94,8 +95,12 @@ class EmergencyStepsView: UIView {
         return stepIndicator
     }()
     
-    override init(frame: CGRect) {
+    init(frame: CGRect,title: String, description: String, img: Data, indicator: String) {
         super.init(frame: frame)
+        self.acessoryTittle.text = title
+        self.descriptionStep.text = description
+        self.imageStep.image = UIImage(data: img)
+        self.stepIndicator.text = indicator
     }
     
     required init?(coder: NSCoder) {
@@ -104,6 +109,28 @@ class EmergencyStepsView: UIView {
     
     override func layoutSubviews() {
         setUp()
+    }
+    
+    @objc func nextStep() {
+        let response = stepDelegate?.nextStep()
+        if let response = response {
+            self.descriptionStep.text = response.step
+            self.imageStep.image = UIImage(data: response.img)
+            self.stepIndicator.text = response.indicator
+        } else {
+            //quando for nulo terminar a interação
+        }
+    }
+    
+    @objc func backStep() {
+        let response = stepDelegate?.backStep()
+        if let response = response {
+            self.descriptionStep.text = response.step
+            self.imageStep.image = UIImage(data: response.img)
+            self.stepIndicator.text = response.indicator
+        } else {
+            //quando for nulo não volta
+        }
     }
 }
 
@@ -129,8 +156,8 @@ extension EmergencyStepsView: ViewCode {
             acessoryView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.4)
         ])
         NSLayoutConstraint.activate([
-            acessoryTittle.centerXAnchor.constraint(equalTo: acessoryView.centerXAnchor),
-            acessoryTittle.centerYAnchor.constraint(equalTo: acessoryView.centerYAnchor),
+            acessoryTittle.topAnchor.constraint(equalTo: acessoryView.topAnchor, constant: 2),
+            acessoryTittle.bottomAnchor.constraint(equalTo: acessoryView.bottomAnchor, constant: 2),
             acessoryTittle.leadingAnchor.constraint(equalTo: acessoryView.leadingAnchor),
             acessoryTittle.trailingAnchor.constraint(equalTo: acessoryView.trailingAnchor)
         ])

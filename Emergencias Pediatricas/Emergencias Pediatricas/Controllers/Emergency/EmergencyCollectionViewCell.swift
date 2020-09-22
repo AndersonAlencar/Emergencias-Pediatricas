@@ -50,9 +50,10 @@ extension EmergencyCollectionViewCell: ViewCode {
     
     func setUpLayoutConstraints() {
         NSLayoutConstraint.activate([
-            characterImage.topAnchor.constraint(equalTo: topAnchor),
-            characterImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
-            characterImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8)
+            characterImage.topAnchor.constraint(equalTo: topAnchor, constant: 5),
+            characterImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            characterImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+            characterImage.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.6)
         ])
         
         NSLayoutConstraint.activate([
